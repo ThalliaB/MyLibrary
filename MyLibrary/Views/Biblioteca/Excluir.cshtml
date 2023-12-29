@@ -1,0 +1,46 @@
+﻿@model BibliotecaModel
+@{
+
+    ViewData["title"] = "Excluir";
+
+}
+
+<div class="container bg-dark bg-gradient p-5 rounded-3 ">
+
+    <div class="mb-5 text-center">
+        <h1 class="text-light">Excluir</h1>
+    </div>
+
+    <form class="container" method="post" asp-controller="Biblioteca" asp-action="Excluir">
+
+        <input type="hidden" asp-for="Id" />
+        <h2 class="text-light">Tem certeza que deseja excluir?</h2>
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="Nome" class="form-label text-light">Nome do livro</label>
+                <input type="text" class="form-control" asp-for="NomeDoLivro" id="Nome" placeholder="Nome do livro" disabled>
+                <span class="text-danger" asp-validation-for="NomeDoLivro"></span>
+            </div>
+
+            <div class="mb-3 col">
+                <label for="Autor" class="form-label text-light">Autor</label>
+                <input type="text" class="form-control" asp-for="Autor" id="Autor" placeholder="Autor do livro" disabled>
+                <span class="text-danger" asp-validation-for="Autor"></span>
+            </div>
+        </div>
+
+        <div class="row w-50">
+            <div class="mb-3 col">
+                <label for="Paginas" class="form-label text-light">Páginas</label>
+                <input type="number" class="form-control" asp-for="Paginas" id="Paginas" placeholder="Páginas" disabled>
+                <span class="text-danger" asp-validation-for="Paginas"></span>
+            </div>
+        </div>
+
+        <div class="d-flex gap-5 mt-5">
+            <button type="submit" class="btn btn-danger w-50" disabled>Excluir</button>
+            <a class="btn btn-primary w-50" asp-controller="Biblioteca" asp-action="Index">Cancelar</a>
+        </div>
+    </form>
+</div>

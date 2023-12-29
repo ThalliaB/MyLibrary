@@ -1,0 +1,45 @@
+﻿@model BibliotecaModel
+@{
+
+    ViewData["title"] = "Editar";
+
+}
+
+<div class="container bg-dark bg-gradient p-5 rounded-3 ">
+
+    <div class="mb-5 text-center">
+        <h1 class="text-light">Editar</h1>
+    </div>
+
+    <form class="container" method="post" asp-controller="Biblioteca" asp-action="Editar">
+
+        <input type="hidden" asp-for="Id"/>
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="Nome" class="form-label text-light">Nome do livro</label>
+                <input type="text" class="form-control" asp-for="NomeDoLivro" id="Nome" placeholder="Nome do livro">
+                <span class="text-danger" asp-validation-for="NomeDoLivro"></span>
+            </div>
+
+            <div class="mb-3 col">
+                <label for="Autor" class="form-label text-light">Autor</label>
+                <input type="text" class="form-control" asp-for="Autor" id="Autor" placeholder="Autor do livro">
+                <span class="text-danger" asp-validation-for="Autor"></span>
+            </div>
+        </div>
+
+        <div class="row w-50">
+            <div class="mb-3 col">
+                <label for="Paginas" class="form-label text-light">Páginas</label>
+                <input type="number" class="form-control" asp-for="Paginas" id="Paginas" placeholder="Páginas">
+                <span class="text-danger" asp-validation-for="Paginas"></span>
+            </div>
+        </div>
+
+        <div class="d-flex gap-5 mt-5">
+            <button type="submit" class="btn btn-success w-50">Salvar</button>
+            <a class="btn btn-primary w-50" asp-controller="Biblioteca" asp-action="Index">Cancelar</a>
+        </div>
+    </form>
+</div>

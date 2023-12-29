@@ -1,0 +1,48 @@
+﻿@model IEnumerable<BibliotecaModel>
+
+<div class="container">
+
+    <div class="d-flex justify-content-between align-items-center mb-5">
+        <h1>Meus livros</h1>
+        <a class="btn btn-dark mx-2" asp-controller="Biblioteca" asp-action="Cadastrar">Cadastrar livro novo</a>
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Autor</th>
+                <th scope="col">Páginas</th>
+                <th scope="col">Última modificação</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @if (Model != null)
+            {
+
+                @foreach (var livro in Model)
+                {
+
+                    <tr>
+                        <th scope="row">@(@livro.Id-1)</th>
+                        <td>@livro.NomeDoLivro</td>
+                        <td>@livro.Autor</td>
+                        <td>@livro.Paginas</td>
+                        <td>@livro.UltimaAtualizacao</td>
+                        <td class="dropdown">
+                            <button class="btn btn-transparent dropdown-toggle btn-sm p-2" type="button" id="options" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                            <ul class="dropdown-menu" aria-labelledby="options">
+                                <li><a asp-controller="Biblioteca" asp-action="Editar" asp-route-id="@livro.Id" class="dropdown-item">Editar</a></li>
+                                <li><a asp-controller="Biblioteca" asp-action="Excluir" asp-route-id="@livro.Id" class="dropdown-item">Excluir </a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+</div>
