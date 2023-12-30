@@ -23,31 +23,31 @@ namespace MyLibrary.Migrations
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("MyLibrary.Models.LivrosModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Autor")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("Autor")
+                    .IsRequired()
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NomeDoLivro")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("NomeDoLivro")
+                    .IsRequired()
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Paginas")
-                        .HasColumnType("int");
+                b.Property<int>("Paginas")
+                    .HasColumnType("int");
 
-                    b.Property<DateTime>("UltimaAtualizacao")
-                        .HasColumnType("datetime2");
+                b.Property<DateTime>("UltimaAtualizacao")
+                    .HasColumnType("datetime2");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("Biblioteca");
-                });
+                b.ToTable("Livros", (string)null);
+            });
 #pragma warning restore 612, 618
         }
     }

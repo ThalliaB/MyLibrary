@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\aPROGRAMAÇÃO\ASP.NET Core MVC\repos\MyLibrary\MyLibrary
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/aPROGRAMAÇÃO/ASP.NET Core MVC/repos/MyLibrary/MyLibrary/Views/Biblioteca/Cadastrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxDYWRhc3RyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/aPROGRAMAÇÃO/ASP.NET Core MVC/repos/MyLibrary/MyLibrary/Views/Biblioteca/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/aPROGRAMAÇÃO/ASP.NET Core MVC/repos/MyLibrary/MyLibrary/Views/Biblioteca/Excluir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxFeGNsdWlyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/aPROGRAMAÇÃO/ASP.NET Core MVC/repos/MyLibrary/MyLibrary/Views/Biblioteca/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/aPROGRAMAÇÃO/ASP.NET Core MVC/repos/MyLibrary/MyLibrary/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
