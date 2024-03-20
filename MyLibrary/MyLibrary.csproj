@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Shared\NovaPasta\**" />
+    <Compile Remove="wwwroot\NovaPasta1\**" />
+    <Content Remove="Views\Shared\NovaPasta\**" />
+    <Content Remove="wwwroot\NovaPasta1\**" />
+    <EmbeddedResource Remove="Views\Shared\NovaPasta\**" />
+    <EmbeddedResource Remove="wwwroot\NovaPasta1\**" />
+    <None Remove="Views\Shared\NovaPasta\**" />
+    <None Remove="wwwroot\NovaPasta1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.13">
       <PrivateAssets>all</PrivateAssets>

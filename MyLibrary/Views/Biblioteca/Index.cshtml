@@ -7,7 +7,16 @@
         <a class="btn btn-dark mx-2" asp-controller="Biblioteca" asp-action="Cadastrar">Cadastrar livro novo</a>
     </div>
 
-    <table class="table table-hover">
+
+    @if(TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success text-black" role="alert">
+            @TempData["MensagemSucesso"];
+        </div>
+    }
+
+
+    <table id="TableLivros"class="table table-hover">
         <thead>
             <tr>
                 <th scope="col">ID</th>

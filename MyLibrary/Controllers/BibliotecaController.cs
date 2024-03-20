@@ -51,6 +51,9 @@ namespace MyLibrary.Controllers
             {
                 _db.Biblioteca.Update(livro);
                 _db.SaveChanges();
+
+                TempData["MensagemSucesso"] = "Edição realizada com sucesso";
+
                 return RedirectToAction("Index");
             }
             return View(livro);
@@ -83,6 +86,9 @@ namespace MyLibrary.Controllers
             }
             _db.Biblioteca.Remove(livro);
             _db.SaveChanges();
+
+            TempData["MensagemSucesso"] = "Exclusão realizada com sucesso";
+
             return RedirectToAction("Index");
                             
         }
@@ -95,6 +101,8 @@ namespace MyLibrary.Controllers
             {
                 _db.Biblioteca.Add(livro);
                 _db.SaveChanges();
+
+                TempData["MensagemSucesso"] = "Cadastro realizado com sucesso";
 
                 return RedirectToAction("Index");
             }

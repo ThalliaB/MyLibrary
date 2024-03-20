@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MyLibrary",
+    "\\MyLibrary\\Data"
   ],
-  "SelectedNode": "\\MyLibrary.sln",
   "PreviewInSolutionExplorer": false
 }
